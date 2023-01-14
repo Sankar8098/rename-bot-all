@@ -37,7 +37,7 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"👋 Hey {user.mention} \n\nI am an Advance File Renamer with Permanent Thumbnail Support.\n\nSend Me any Video or Document to Rename !"
+    txt=f"👋 Hey {user.mention} \n\nI am an Advance File Rename Bot with Permanent Thumbnail Support.\n\nSend Me any Video or Document to Rename !"
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton('📢 Updates', url='https://t.me/TheInsomniacsClub'),
         InlineKeyboardButton('🤝 Support', url='https://t.me/TheInsomniacsClub')
@@ -47,7 +47,7 @@ async def start(client, message):
         ]
         ])
     if START_PIC:
-        await message.reply_photo(START_PIC, caption=txt, reply_markup=button)       
+        await message.reply_video(START_PIC, caption=txt, reply_markup=button)       
     else:
         await message.reply_text(text=txt, reply_markup=button, disable_web_page_preview=True)
     
