@@ -16,7 +16,7 @@ DB_URL = os.environ.get("DB_URL","mongodb+srv://0:0@cluster0.pylactg.mongodb.net
  
 FLOOD = int(os.environ.get("FLOOD", "10"))
 
-START_PIC = os.environ.get("START_PIC", "https://te.legra.ph/file/c9b09bea7958ec9dfd1ac.jpg")
+START_PIC = os.environ.get("START_PIC", "https://te.legra.ph/file/f996d385cea88f0562a48.mp4")
 
 ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
 
