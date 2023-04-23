@@ -87,8 +87,8 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=f"""👋 Hey {user.mention} \n\nI am an Advance File Renamer with Permanent Thumbnail Support.\n\nSend Me any Video or Document to Rename !""",
             reply_markup=InlineKeyboardMarkup( [[
-        InlineKeyboardButton('📢 Updates', url='https://t.me/TheInsomniacsClub),
-        InlineKeyboardButton('🤝 Support', url='https://t.me/TheInsomniacsClub')
+        InlineKeyboardButton('📢 Updates', url='https://t.me/SK_MoviesOffl'),
+        InlineKeyboardButton('🤝 Support', url='https://t.me/SK_MoviesOffl')
         ],[
         InlineKeyboardButton('⚡️ About', callback_data='about'),
         InlineKeyboardButton('🤕 Help', callback_data='help')
